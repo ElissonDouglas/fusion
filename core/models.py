@@ -4,7 +4,7 @@ import uuid
 
 def get_file_path(_instance, filename):
     ext = filename.split('.')[-1]
-    filename = (f'{uuid.uuid4}.{ext}')
+    filename = (f'{uuid.uuid4()}.{ext}')
     return filename
     
 
@@ -94,3 +94,4 @@ class Recursos(Base):
         
     def __str__(self) -> str:
         return self.nome
+
